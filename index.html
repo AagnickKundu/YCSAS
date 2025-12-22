@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body{
+            height: 100vh;
+            background-color: #f7a1c4; /* Pink background */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            background: #ffffff;
+            width: 400px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        .form{
+            margin-bottom: 15px;
+        }
+        input, select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #e0e0e0;
+            font-size: 14px;
+        }
+        textarea{
+            resize: none;
+            height: 80px;
+        }
+        button{
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background-color: #c2185b;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover{
+            background-color: #ad1457;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Registration Form</h2>
+        <form>
+            <div class="form">
+                <input type="text" placeholder="Name*" required>
+            </div>
+            <div class="form">
+                <input type="email" placeholder="Email*" required>
+            </div>
+            <div class="form">
+                <input type="tel" placeholder="Phone*" required>
+            </div>
+            <div class="form">
+                <select required>
+                    <option value="">Subject*</option>
+                    <option>Web Development</option>
+                    <option>Python</option>
+                    <option>Java</option>
+                    <option>Others</option>
+                </select>
+            </div>
+            <div class="form">
+                <textarea placeholder="Message*" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
